@@ -1,0 +1,85 @@
+services:
+  calculadora_server:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: calculadora
+    image: jaimeleon10/calculadora
+    volumes:
+      - documentation:/app/doc
+      - coverage:/app/coverage
+      - tests:/app/tests
+
+  nginx_presentation:
+    image: ubuntu/nginx:latest
+    container_name: nginx_presentation
+    volumes:
+      - ./servidores/nginx-presentacion/default:/etc/nginx/sites-available/default
+      - ./servidores/nginx-presentacion/index.html:/var/www/html/presentacion/index.html
+    restart: always
+    depends_on:
+      - calculadora_server
+    networks:
+      - servers
+
+  apache_documentation:
+    image: ubuntu/apache2:latest
+    container_name: apache_documentation
+    volumes:
+      - documentation:/var/www/html/
+      - ./servidores/apache-documentation/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    restart: always
+    depends_on:
+      - calculadora_server
+    networks:
+      - servers
+
+  nginx_coverage:
+    image: ubuntu/nginx:latest
+    container_name: nginx_coverage
+    volumes:
+      - coverage:/var/www/html/
+      - ./servidores/nginx-coverage/default:/etc/nginx/sites-available/default
+    restart: always
+    depends_on:
+      - calculadora_server
+    networks:
+      - servers
+
+  nginx_test:
+    image: ubuntu/nginx:latest
+    container_name: nginx_test
+    volumes:
+      - tests:/var/www/html/
+      - ./servidores/nginx-test/default:/etc/nginx/sites-available/default
+    restart: always
+    depends_on:
+      - calculadora_server
+    networks:
+      - servers
+
+  proxy:
+    image: ubuntu/nginx:latest
+    container_name: proxy
+    volumes:
+      - ./servidores/proxy/nginx.conf:/etc/nginx/nginx.conf
+      - ./servidores/proxy/certs:/etc/nginx/certs
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    depends_on:
+      - nginx_presentation
+      - apache_documentation
+      - nginx_coverage
+      - nginx_test
+    networks:
+      - servers
+
+volumes:
+  documentation:
+  coverage:
+  tests:
+
+networks:
+  servers:
