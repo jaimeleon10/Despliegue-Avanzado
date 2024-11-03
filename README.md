@@ -13,13 +13,13 @@ Repositorio con un proxy inverso que desplegará distintos datos de una app en v
 <img src="./images/appJavaNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Documentación
-<img src="./images/documentacionNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
+<img src="./images/documentationNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Coverage
 <img src="./images/coverageJacocoNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Tests
-<img src="./images/testJacocoNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
+<img src="./images/testsJacocoNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ## Autor
 <a href="https://github.com/jaimeleon10">Jaime León Mulero</a>
