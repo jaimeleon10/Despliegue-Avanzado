@@ -5,9 +5,9 @@ services:
       dockerfile: dockerfile
     container_name: calculadora
     volumes:
-      - documentation:/app/doc
-      - coverage:/app/coverage
-      - tests:/app/tests
+      - documentation:/app/files/documentation
+      - coverage:/app/files/coverage
+      - tests:/app/files/tests
 
   nginx_presentation:
     image: ubuntu/nginx:latest
