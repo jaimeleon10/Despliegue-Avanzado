@@ -2,6 +2,7 @@
 Repositorio con un proxy inverso que desplegará distintos datos de una app en varios contenedores haciendo uso de volúmenes con la herramienta Docker.
 
 ## Imágenes
+
 ### Carpeta con archivos estáticos
 <a href="images/carpetaWeb.png">
 
