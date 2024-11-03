@@ -4,22 +4,22 @@ Repositorio con un proxy inverso que desplegará distintos datos de una app en v
 ## Imágenes
 
 ### Carpeta con archivos estáticos
-<a href="images/carpetaWeb.png">
+<img src="./images/carpetaWeb.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Configuración de despliegue
-<a href="images/netlifyConfigDeployment.png">
+<img src="./images/netlifyConfigDeployment.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Presentación web con Netlify
-<a href="images/appJavaNetlify.png">
+<img src="./images/appJavaNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Documentación
-<a href="images/documentacionNetlify.png">
+<img src="./images/documentacionNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Coverage
-<a href="images/coverageJacocoNetlify.png">
+<img src="./images/coverageJacocoNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ### Tests
-<a href="images/testJacocoNetlify.png">
+<img src="./images/testJacocoNetlify.png" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 ## Autor
 <a href="https://github.com/jaimeleon10">Jaime León Mulero</a>
