@@ -4,11 +4,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-# Excepciones específicas para permitir ciertas rutas
-!/build/docs/javadoc/index.html
-!/build/reports/jacoco/test/html/index.html
-!/build/reports/tests/test/index.html
-
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
