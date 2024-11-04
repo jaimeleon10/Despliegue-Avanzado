@@ -1,0 +1,7 @@
+-classpath 'C:\\Users\\jleon\\IdeaProjects\\2DAW\\Despliegue-Avanzado\\CalculadoraApp\\build\\classes\\java\\main;C:\\Users\\jleon\\IdeaProjects\\2DAW\\Despliegue-Avanzado\\CalculadoraApp\\build\\resources\\main'
+-d 'C:\\Users\\jleon\\IdeaProjects\\2DAW\\Despliegue-Avanzado\\CalculadoraApp\\build\\docs\\javadoc'
+-doctitle 'CalculadoraApp 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'CalculadoraApp 1.0-SNAPSHOT API'
+'C:\\Users\\jleon\\IdeaProjects\\2DAW\\Despliegue-Avanzado\\CalculadoraApp\\src\\main\\java\\org\\example\\Main.java'
